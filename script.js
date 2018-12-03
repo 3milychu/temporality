@@ -31,7 +31,7 @@ function loadEntries(type, data) {
 	for(i=0;i<entry_data.length;i++){
 		var card_holder = document.createElement('div');
 		card_holder.className="card-holder";
-		card_holder.id="entry"+i;
+		card_holder.id="entry"+entry_data[i]['index'];
 		var fimg = document.createElement('img');
 		fimg.setAttribute('src',"assets/" + entry_data[i]['image']);
 
@@ -78,11 +78,16 @@ function showDetails(data) {
 			console.log('this works');
 			details.style.display="block";
 			ref = this.id;
+			console.log(ref);
 			ref = parseInt(ref.split("y")[1]);
+			console.log(ref);
 			img.setAttribute('src',"assets/"+data[ref]['image']);
 			title.innerHTML = data[ref]['title'];
 			subtitle.innerHTML = data[ref]['subtitle'];
 			desc.innerHTML = data[ref]['description'];
+			if(data[ref]['video']!=""){
+				desc.innerHTML+="<video src='assets/" + data[ref]['video'] + "'width='640' height='360' controls autoplay muted>"
+			}
 		}
 	}
 	close.addEventListener('click',function() {

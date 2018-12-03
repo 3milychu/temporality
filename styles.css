@@ -162,6 +162,10 @@ close:hover {
 	border-radius:2em;
 }
 
+.content-holder video {
+	width:120%;
+}
+
 .content-holder h1 {
 	font-weight:100;
 	width:80%;
