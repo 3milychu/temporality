@@ -167,6 +167,7 @@ close:hover {
 }
 
 .content-holder video {
+	margin-top:-20%;
 	width:120%;
 }
 
@@ -185,7 +186,7 @@ label {
 .content-holder h1 {
 	font-weight:100;
 	width:80%;
-	margin-top:20%;
+	margin-top:15%;
 	padding-left:5%;
 	line-height:1em;
 	margin-bottom:0%;
@@ -212,4 +213,19 @@ label {
 	padding-left:5%;
 	color:#E6E6E6;
 
+}
+
+.content-holder a {
+	width:10%;
+	text-transform:uppercase;
+	letter-spacing:0.2em;
+	border:0.2em solid white;
+	padding:1%;
+	font-weight:900;
+	font-size:0.8em;
+	letter-spacing:0.02em;
+	margin-left:5%;
+	color:#E6E6E6;
+	text-decoration:none;
+	line-height:5em;
 }

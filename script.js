@@ -73,6 +73,7 @@ function showDetails(data) {
 	var subtitle = content.querySelector('h2')
 	var desc = content.querySelector('p');
 	var close = content.querySelector('close');
+	var visit = content.querySelector('.visit');
 	console.log(entries.length);
 	for (i=0;i<entries.length;i++){
 		entries[i].onclick=function() {
@@ -90,6 +91,7 @@ function showDetails(data) {
 			if(data[ref]['interactive']==1){
 				tags.innerHTML+="<label>interactive</label>";
 			}
+			visit.innerHTML="<a href=" + data[ref]['link'] + " target='blank'>Visit</a>";
 		}
 	}
 	close.addEventListener('click',function() {
