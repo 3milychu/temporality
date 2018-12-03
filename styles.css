@@ -121,7 +121,7 @@ close {
 	font-weight:900;
 	position:absolute;
 	right:0;
-	margin:1% 6%;
+	margin:0% 5%;
 	cursor:pointer;
 	transition:0.25s ease-in-out;
 }
@@ -138,17 +138,21 @@ close:hover {
 	background-color:white;
 	display:none;
 	animation: fadeIn 0.25s ease-in-out;
+	overflow:hidden;
 }
 
 .details img {
-	width:40%;
-	margin-top:8%;
-	float:left;
+	position:absolute;
+	z-index:-1;
+	width:120%;
+	height:auto;
+	top:-5%;
+	left:-5%;
 	display:inline-block;
-	padding:5%;
 }
 
 .content-holder {
+	z-index:1;
 	width:42%;
 	float:right;
 	margin-top:3%;
@@ -164,6 +168,18 @@ close:hover {
 
 .content-holder video {
 	width:120%;
+}
+
+label {
+	background-color:#333333;
+	padding:2%;
+	margin:3%;
+	margin-top:10%;
+	text-transform:uppercase;
+	font-size:0.5em;
+	font-weight:900;
+	letter-spacing:0.2em;
+
 }
 
 .content-holder h1 {

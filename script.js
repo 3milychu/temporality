@@ -67,6 +67,7 @@ function showDetails(data) {
 	var entries = document.querySelectorAll('.card-holder');
 	var details = document.querySelector('.details');
 	var content = document.querySelector('.content-holder');
+	var tags = document.querySelector('.tag');
 	var img = details.querySelector('img');
 	var title = content.querySelector('h1');
 	var subtitle = content.querySelector('h2')
@@ -75,18 +76,19 @@ function showDetails(data) {
 	console.log(entries.length);
 	for (i=0;i<entries.length;i++){
 		entries[i].onclick=function() {
-			console.log('this works');
 			details.style.display="block";
 			ref = this.id;
-			console.log(ref);
 			ref = parseInt(ref.split("y")[1]);
-			console.log(ref);
 			img.setAttribute('src',"assets/"+data[ref]['image']);
 			title.innerHTML = data[ref]['title'];
 			subtitle.innerHTML = data[ref]['subtitle'];
 			desc.innerHTML = data[ref]['description'];
 			if(data[ref]['video']!=""){
 				desc.innerHTML+="<video src='assets/" + data[ref]['video'] + "'width='640' height='360' controls autoplay muted>"
+			}
+			tags.innerHTML="<label>"+data[ref]['tag'] + "</label>";
+			if(data[ref]['interactive']==1){
+				tags.innerHTML+="<label>interactive</label>";
 			}
 		}
 	}
