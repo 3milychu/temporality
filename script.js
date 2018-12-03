@@ -1,4 +1,4 @@
-d3.csv('https://raw.githubusercontent.com/3milychu/temporality/master/data/data.csv')
+d3.csv('https://raw.githubusercontent.com/3milychu/temporality/master/data/data.csv?=nocache123')
   .then(function(data) {
       loadEntries("litreview", data);
       showDetails(data);
@@ -17,6 +17,7 @@ d3.csv('https://raw.githubusercontent.com/3milychu/temporality/master/data/data.
       });
        nav[2].addEventListener("click", function(){
       	selectNav(2);
+      	console.log(data);
       	loadEntries("playground",data);
       	showDetails(data);
       });
@@ -85,7 +86,7 @@ function showDetails(data) {
 			subtitle.innerHTML = data[ref]['subtitle'];
 			desc.innerHTML = data[ref]['description'];
 			if(data[ref]['video']!=""){
-				desc.innerHTML+="<video src='assets/" + data[ref]['video'] + "'width='640' height='360' controls autoplay muted>"
+				desc.innerHTML+="<video src='assets/" + data[ref]['video'] + "'width='640' controls autoplay muted>"
 			}
 			tags.innerHTML="<label>"+data[ref]['tag'] + "</label>";
 			if(data[ref]['interactive']==1){
