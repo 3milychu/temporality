@@ -10,6 +10,6 @@
 8,design,narrative,1,9.png,9.mov,A Day in the Life of Americans,Nathan Yau,2000s,,,https://flowingdata.com/2015/12/15/a-day-in-the-life-of-americans/
 9,design,spatial,1,10.png,10.mov,50 Years Swiss Music Charts,Hinderling Volkart,2000s,,,https://50-jahre-hitparade.ch/
 10,playground,spatial,1,11.png,11.mov,Velocity and Speed,Three.js,,,,pages/gui1.html
-11,playground,spatial,1,12.png,12.mov,Depth and Texture,Three.js,,,https://threejs.org/examples/#webgl_effects_anaglyph,pages/gui3.html
-12,playground,cyclical,1,13.png,13.mov,Movement and Groupings,Three.js,,,,pages/gui4.html
+11,playground,spatial,1,12.png,12.mov,Texture and Depth,Three.js,,,https://threejs.org/examples/#webgl_effects_anaglyph,pages/gui3.html
+12,playground,cyclical,1,13.png,13.mov,Movement and Depth,Three.js,,,,pages/gui4.html
 13,Animation,narrative,0,14.gif,14.gif,Animation,D3.js,,,,pages/gui5.html
