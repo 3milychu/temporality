@@ -26,20 +26,21 @@ d3.csv('https://raw.githubusercontent.com/3milychu/temporality/master/data/data.
 function loadEntries(type, data) {
 	var body = document.querySelector('#cards');
 	body.innerHTML="";
+	console.log(type);
 	entry_data = data.filter(function(d){return d.type ==type;});
 	for(i=0;i<entry_data.length;i++){
 		var card_holder = document.createElement('div');
 		card_holder.className="card-holder";
 		card_holder.id="entry"+i;
 		var fimg = document.createElement('img');
-		fimg.setAttribute('src',"assets/" + data[i]['image']);
+		fimg.setAttribute('src',"assets/" + entry_data[i]['image']);
 
 		var info = document.createElement('div');
 		info.className="info";
 		var title = document.createElement('h2');
-		title.innerHTML=data[i]['title'];
+		title.innerHTML=entry_data[i]['title'];
 		var subtitle = document.createElement('p');
-		subtitle.innerHTML=data[i]['subtitle'];
+		subtitle.innerHTML=entry_data[i]['subtitle'];
 
 		card_holder.appendChild(fimg);
 		card_holder.appendChild(info);
