@@ -23,7 +23,7 @@ body {
 	margin:2% 0% 2% 5%;
 	border:0.1em solid black;
 	padding:1%;
-	width:15%;
+	width:5.5em;
 	font-size:2em;
 	font-weight:900;
 	line-height:0.7em;
@@ -167,6 +167,7 @@ close:hover {
 	box-shadow: -0.5em 0.5em 5em #CCC;
 	color:white;
 	border-radius:2em;
+	overflow-y:scroll;
 }
 
 .content-holder video {
@@ -222,8 +223,8 @@ label {
 	width:10%;
 	text-transform:uppercase;
 	letter-spacing:0.2em;
-	border:0.2em solid white;
-	padding:1%;
+	border:0.15em solid white;
+	padding:2%;
 	font-weight:900;
 	font-size:0.8em;
 	letter-spacing:0.02em;
@@ -232,4 +233,46 @@ label {
 	text-decoration:none;
 	line-height:5em;
 	z-index:100;
+}
+
+@media screen and (max-width:978px){
+	.card-holder{
+		width:80%;
+		height:50vh;
+		margin-left:9%;
+	}
+	.card-holder img{
+		height:100%;
+		transform:scale(1.2);
+	}
+	.logo{
+		padding:2%;
+	}
+	.info {
+		display:none;
+	}
+	.details img {
+		height:100%;
+		width:auto;
+		transform:scale(1.2);
+		top:-5%;
+		left:-5%;
+	}
+	.content-holder {
+		width:85%;
+		height:90vh;
+		float:left;
+		margin:auto;
+		margin-top:2%;
+		margin-left:5%;
+		opacity:0.95;
+		padding-top:10%;
+	}
+	close {
+		padding:4%;
+		margin: -5% 10%;
+	}
+	.content-holder h1 {
+		margin-top:30%;
+	}
 }
