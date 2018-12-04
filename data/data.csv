@@ -11,6 +11,5 @@
 9,design,spatial,1,10.png,10.mov,50 Years Swiss Music Charts,Hinderling Volkart,2000s,,,https://50-jahre-hitparade.ch/
 10,design,spatial,1,12.png,12.mov,Texture and Depth,Three.js,,,,https://threejs.org/examples/#webgl_effects_anaglyph
 11,design,cyclical,1,13.png,13.mov,Movement and Depth,Three.js,,,,https://threejs.org/examples/?q=texture#webgl_depth_texture
-12,design,narrative,0,14.gif,14.gif,Animated Clustering,Flowing Data,,,,https://flowingdata.com/2016/08/23/make-a-moving-bubbles-chart-to-show-clustering-and-distributions/
-13,playground,spatial,1,11.png,11.mov,Anatomy,Three.js,,,,pages/gui1.html
-14,playground,spatial,1,15.png,15.mov,Depth and Light,Three.js,,,,pages/gui2.html
+12,playground,spatial,1,11.png,11.mov,Anatomy,Three.js,,,,pages/gui1.html
+13,playground,spatial,1,15.png,15.mov,Depth and Light,Three.js,,,,pages/gui2.html
