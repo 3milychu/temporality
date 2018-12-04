@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>GUI 1</title>
+	<title>Anatomy</title>
 	<style>
 	body {
   margin: 0;
@@ -42,17 +42,21 @@ document.body.appendChild(renderer.domElement);
 
 // Making the cube
 
-var geometry = new THREE.BoxGeometry(5, 5, 5, 5, 5, 5);
-var material = new THREE.MeshDepthMaterial({
-  opacity: 0.1,
-  blending: THREE.NormalBlending, 
-  depthTest: true,
+var geometry = new THREE.BoxGeometry(1,1,1);
+var material = new THREE.MeshBasicMaterial( {color: 0xF2F2} );
+// var material = new THREE.MeshDepthMaterial({
+//   opacity: 0.1,
+//   blending: THREE.NormalBlending, 
+//   depthTest: true,
 
-});
+// });
 
+dataset_length=5;
+for(i=0;i<dataset_length;i++){
 
-
+}
 var cube = new THREE.Mesh(geometry, material);
+cube.material.wireframe=true;
 scene.add(cube);
 
 // Options to be added to the GUI
